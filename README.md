@@ -22,6 +22,6 @@ WCS running demands cannot be fully understood through aggregated match metrics 
 2. Install Pipenv  
 3. Set up the environment  
 4. Open the notebook  
-   Launch `submission_VatneEmaly.ipynb` and choose the Python kernel created by Pipenv.  
+   Launch `submission.ipynb` and choose the Python kernel created by Pipenv.  
 5. Run the notebook  
    Select the match(es) that you wish to analyze and the player and window duration for presenting the movement sequences for that WCS demand period.
