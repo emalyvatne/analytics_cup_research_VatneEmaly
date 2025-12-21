@@ -1,5 +1,5 @@
 # SkillCorner X PySport Analytics Cup
-This repository contains [Emaly Vatne's](emalyvatne.github.io) submission for the SkillCorner X PySport Analytics Cup **Research Track**.
+This repository contains [Emaly Vatne's](https://www.emalyvatne.github.io) submission for the SkillCorner X PySport Analytics Cup **Research Track**.
 
 ## Contextualizing Worst-Case Scenario Running Demands by Identifying Associated In-Game Events and Movement Sequences in Soccer to Inform Physical Preparation and Tactical Development
 
