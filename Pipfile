@@ -4,12 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+jupyter = "*"
+path = "*"
 requests = "*"
 tqdm = "*"
 numpy = "*"
 pandas = "*"
 scipy = "*"
-jupyter = "*"
+pathlib = "*"
+matplotlib = "*"
+plotly = "*"
+ipywidgets = "*"
+ipython = "*"
 
 [dev-packages]
 

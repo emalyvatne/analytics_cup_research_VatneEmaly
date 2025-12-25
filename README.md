@@ -22,7 +22,7 @@ Additionally, common preceding events differed across players and positions, wit
 
 Movement sequence analysis revealed substantial inter-individual variability in how peak demands were accumulated despite similar running intensities. This part of the Notebook supports the design of conditioning drills that replicate the locomotor demands of WCS demands periods. Additionally, the visualization demonstrates that **WCS demands/peak running intensities are rarely linear and in the same speed** and thus training should adjust accordingly to be sport-specific. 
 
-[Click here to view an example](https://buckeyemailosu-my.sharepoint.com/:v:/g/personal/vatne_1s_osu_edu/IQA3awKdVyB9RZNsLcZ9SnymAUvUZ1qUTwEmkPnv5742VhU?e=mT2s5r&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+![alt text](figs/1925299_560983_WCS_60s_MovementSeq.gif)
 
 ### Conclusion  
 This workflow provides coaches and performance practitioners with interpretable, context-driven WCS demand calculations and insights. By linking peak running loads to tactical events and reconstructing movement sequences, it enhances collaboration across departments and informs individualized, game-model-aligned training prescriptions. The notebook offers a scalable tool that can be repeatedly applied across matches to support ongoing monitoring, tactical evaluation, and readiness-based decision-making in elite soccer.
