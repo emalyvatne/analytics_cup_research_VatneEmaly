@@ -1,18 +1,20 @@
 # SkillCorner X PySport Analytics Cup
 This repository contains [Emaly Vatne's](https://emalyvatne.github.io/) submission for the SkillCorner X PySport Analytics Cup **Research Track**. :)
 
+<hr style="border:0; border-top:1px solid black;">
+
 ## Contextualizing Worst-Case Scenario Running Demands by Identifying Associated In-Game Events and Movement Sequences in Soccer to Inform Physical Preparation and Tactical Development
 
 ### Introduction  
-While external load metrics from match play are ubiquitously used to support physical preparation in soccer (1), they are often reported as aggregated values across a match, obscuring the worst-case scenario (WCS) demands. WCS demands represent the highest locomotor intensities experienced over short rolling windows and better reflect peak match demands than whole-match averages (2,3). Because injury, increased fatigue, and technical breakdowns can occur during these peak periods, preparing players for WCS demands is important for effective training design. Despite growing interest in WCS metrics (3), these demands are rarely contextualized within the game, limiting their value to coaches. It remains unclear which technical or tactical events precede WCS demands and how movement sequences can be translated into sport-specific conditioning. Therefore, the purpose of this study was to contextualize WCS running demands by identifying preceding in-game events and reconstructing movement sequences to inform tactical teaching and physical preparation.  
+External load metrics from match play are ubiquitously used to support physical preparation in soccer (1), but are often aggregated across a match, obscuring worst-case scenario (WCS) demands. WCS demands represent the highest locomotor intensities over short rolling windows and better reflect peak match demands than whole-match averages (2,3). Preparing players for WCS demands is critical for effective training design. However, WCS metrics are rarely contextualized within the game, limiting their value to coaches. It remains unclear which technical or tactical actions precede WCS demands or how movement sequences can support sport-specific conditioning. Therefore, this study aimed to contextualize WCS running demands by identifying preceding events and reconstructing movement sequences to inform tactical teaching and physical preparation.    
 
 ### Methods  
-Optical tracking data from a randomly selected professional soccer match for which tracking and event data were openly available (Brisbane Roar FC vs. Perth Glory FC on 2024-12-21; `match_id` = 1925299) was analyzed for the development of this reusable tool. WCS running demands were calculated using a rolling moving-average approach across 1-, 2-, 3, 4, and 5-minute windows. For each player, WCS windows were extracted and temporally aligned with event data using timestamps and frame counts. Events occurring prior to each WCS window were merged with the start of each WCS demand period by matching the frame count and player Id. Finally, player trajectories and speed profiles during WCS windows were then reconstructed to characterize individual movement sequences. 
+Optical tracking data from a randomly selected professional soccer match with publicly available tracking and event files (Brisbane Roar FC vs. Perth Glory FC; match_id = 1925299) were analyzed to develop this reusable tool. WCS running demands were calculated using a rolling moving-average approach across 1-, 2-, 3-, 4-, and 5-minute windows. For each player, WCS windows were extracted and aligned with event data using timestamps and frame counts. Events occurring prior to each WCS window were merged with its start by matching frame count and player ID. Player trajectories and speed profiles during WCS periods were reconstructed to characterize individual movement sequences.
 
 ### Results
 This submission provides a generalizable Jupyter Notebook that calculates WCS demands from *SkillCorner* tracking data, merges them with preceding in-game dynamic events on a player-specific basis, and visualizes movement sequences during WCS periods for a selected player, allowing the workflow to be applied across matches. 
 
-In the match analzyed for the development of the reusable tool, the peak running intensity increased as window duration shortened, with the highest demands observed during 30-second and 1-minute windows, consistent with previous literature (2,3). 
+In the match analyzed for the development of this tool, the peak running intensity increased as window duration shortened, with the highest demands observed during 30-second and 1-minute windows, consistent with previous literature (2,3). 
 
 Table 1. Team-level summary of peak locomotor intensities across multiple WCS durations, reported as mean values with minimum–maximum ranges.  
 | Team                       | Peak m/min 60s           | Peak m/min 120s          | Peak m/min 180s          | Peak m/min 240s          | Peak m/min 300s          |
@@ -23,7 +25,7 @@ Table 1. Team-level summary of peak locomotor intensities across multiple WCS du
 Additionally, common preceding events differed across players and positions, with WCS demands emerging from contexts including defensive off-ball runs and on-ball engagements. 
 
 Table 2. Summary of dynamic tactical events occurring immediately before peak 60-second worst-case scenario (WCS) running demands, grouped by team.  
-| Team                     | Event Type        | EventType_Count | % of Events that Precede WCS | Event Sub-Type        | Subtype_Count |
+| Team                     | Event Type        | Event Type Count | Event Proportion          | Event Sub-Type        | Sub-Type Count |
 |-------------------------|------------------|----------------|------------------------------|----------------------|---------------|
 | Brisbane Roar FC        | passing_option    | 2              | 28.57                        | No Sub-Type          | 2             |
 | Brisbane Roar FC        | off_ball_run      | 2              | 28.57                        | run_ahead_of_the_ball| 1             |
@@ -31,19 +33,18 @@ Table 2. Summary of dynamic tactical events occurring immediately before peak 60
 | Brisbane Roar FC        | on_ball_engagement| 2              | 28.57                        | pressure             | 1             |
 | Brisbane Roar FC        | on_ball_engagement| 2              | 28.57                        | recovery_press       | 1             |
 | Brisbane Roar FC        | player_possession | 1              | 14.29                        | No Sub-Type          | 1             |
-| Perth Glory Football Club | off_ball_run    | 3              | 37.50                        | run_ahead_of_the_ball| 1             |
-| Perth Glory Football Club | off_ball_run    | 3              | 37.50                        | support              | 2             |
-| Perth Glory Football Club | passing_option  | 2              | 25.00                        | No Sub-Type          | 2             |
-| Perth Glory Football Club | player_possession | 2            | 25.00                        | No Sub-Type          | 2             |
-| Perth Glory Football Club | on_ball_engagement | 1          | 12.50                        | pressing             | 1             |
-
+| Perth Glory FC          | off_ball_run    | 3              | 37.50                        | run_ahead_of_the_ball| 1             |
+| Perth Glory FC          | off_ball_run    | 3              | 37.50                        | support              | 2             |
+| Perth Glory FC          | passing_option  | 2              | 25.00                        | No Sub-Type          | 2             |
+| Perth Glory FC          | player_possession | 2            | 25.00                        | No Sub-Type          | 2             |
+| Perth Glory FC          | on_ball_engagement | 1          | 12.50                        | pressing             | 1             |
 
 Movement sequence analysis revealed substantial inter-individual variability in how peak demands were accumulated despite similar running intensities. This part of the Notebook supports the design of conditioning drills that replicate the locomotor demands of WCS demands periods. Additionally, the visualization demonstrates that **WCS demands/peak running intensities are rarely linear and in the same speed** and thus training should adjust accordingly to be sport-specific. 
 
 [Figure 1. Example animation of 60-Second WCS Demand Movement Sequence.](https://buckeyemailosu-my.sharepoint.com/:v:/g/personal/vatne_1s_osu_edu/IQA3awKdVyB9RZNsLcZ9SnymAUvUZ1qUTwEmkPnv5742VhU)
 
 ### Conclusion  
-This workflow provides coaches and performance practitioners with interpretable, context-driven WCS demand calculations and insights. By linking peak running loads to tactical events and reconstructing movement sequences, it enhances collaboration across departments and informs individualized, game-model-aligned training prescriptions. The notebook offers a scalable tool that can be repeatedly applied across matches to support ongoing monitoring, tactical evaluation, and readiness-based decision-making in elite soccer.
+This workflow provides coaches and performance practitioners with interpretable, context-driven WCS calculations and analysis. By linking peak running intensities to tactical events and reconstructing movement sequences, it enhances collaboration across departments and informs individualized, sport-specific training prescriptions. The notebook offers a scalable tool that can be repeatedly applied across matches to support ongoing monitoring, tactical evaluation, and readiness-based decision-making in elite soccer.
 
 <hr style="border:0; border-top:1px solid black;">
 
@@ -57,6 +58,8 @@ This workflow provides coaches and performance practitioners with interpretable,
 5. Run the notebook  
    Select the match(es) that you wish to analyze. 
    For the movement sequences visualization, select the player and window duration and then hit Play.  
+
+<hr style="border:0; border-top:1px solid black;">
 
 ## References  
 1. Halson, S. L. (2014). Monitoring Training Load to Understand Fatigue in Athletes. Sports Medicine, 44(S2), 139–147. https://doi.org/10.1007/s40279-014-0253-z
