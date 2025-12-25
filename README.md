@@ -14,15 +14,33 @@ This submission provides a generalizable Jupyter Notebook that calculates WCS de
 
 In the match analzyed for the development of the reusable tool, the peak running intensity increased as window duration shortened, with the highest demands observed during 30-second and 1-minute windows, consistent with previous literature (2,3). 
 
-![alt text](figs/1925299_WCS.png)
+Table 1. Team-level summary of peak locomotor intensities across multiple WCS durations, reported as mean values with minimum–maximum ranges.  
+| Team                       | Peak m/min 60s           | Peak m/min 120s          | Peak m/min 180s          | Peak m/min 240s          | Peak m/min 300s          |
+|---------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+| Brisbane Roar FC          | 220.3 (98.2 – 269.6)     | 212.1 (78.7 – 269.6)     | 210.4 (73.2 – 269.6)     | 209.4 (67.5 – 269.6)     | 209.2 (65.2 – 269.6)     |
+| Perth Glory Football Club | 225.1 (114.2 – 375.5)    | 212.7 (97.9 – 375.5)     | 210.7 (89.6 – 375.5)     | 208.9 (81.6 – 375.5)     | 208.5 (81.6 – 375.5)     |
 
 Additionally, common preceding events differed across players and positions, with WCS demands emerging from contexts including defensive off-ball runs and on-ball engagements. 
 
-![alt text](figs/1925299_WCS_PrecedingEvents_60s.png)
+Table 2. Summary of dynamic tactical events occurring immediately before peak 60-second worst-case scenario (WCS) running demands, grouped by team.  
+| Team                     | Event Type        | EventType_Count | % of Events that Precede WCS | Event Sub-Type        | Subtype_Count |
+|-------------------------|------------------|----------------|------------------------------|----------------------|---------------|
+| Brisbane Roar FC        | passing_option    | 2              | 28.57                        | No Sub-Type          | 2             |
+| Brisbane Roar FC        | off_ball_run      | 2              | 28.57                        | run_ahead_of_the_ball| 1             |
+| Brisbane Roar FC        | off_ball_run      | 2              | 28.57                        | support              | 1             |
+| Brisbane Roar FC        | on_ball_engagement| 2              | 28.57                        | pressure             | 1             |
+| Brisbane Roar FC        | on_ball_engagement| 2              | 28.57                        | recovery_press       | 1             |
+| Brisbane Roar FC        | player_possession | 1              | 14.29                        | No Sub-Type          | 1             |
+| Perth Glory Football Club | off_ball_run    | 3              | 37.50                        | run_ahead_of_the_ball| 1             |
+| Perth Glory Football Club | off_ball_run    | 3              | 37.50                        | support              | 2             |
+| Perth Glory Football Club | passing_option  | 2              | 25.00                        | No Sub-Type          | 2             |
+| Perth Glory Football Club | player_possession | 2            | 25.00                        | No Sub-Type          | 2             |
+| Perth Glory Football Club | on_ball_engagement | 1          | 12.50                        | pressing             | 1             |
+
 
 Movement sequence analysis revealed substantial inter-individual variability in how peak demands were accumulated despite similar running intensities. This part of the Notebook supports the design of conditioning drills that replicate the locomotor demands of WCS demands periods. Additionally, the visualization demonstrates that **WCS demands/peak running intensities are rarely linear and in the same speed** and thus training should adjust accordingly to be sport-specific. 
 
-[Demo-Figure](https://buckeyemailosu-my.sharepoint.com/:v:/g/personal/vatne_1s_osu_edu/IQA3awKdVyB9RZNsLcZ9SnymAUvUZ1qUTwEmkPnv5742VhU)
+[Figure 1. Example animation of 60-Second WCS Demand Movement Sequence.](https://buckeyemailosu-my.sharepoint.com/:v:/g/personal/vatne_1s_osu_edu/IQA3awKdVyB9RZNsLcZ9SnymAUvUZ1qUTwEmkPnv5742VhU)
 
 ### Conclusion  
 This workflow provides coaches and performance practitioners with interpretable, context-driven WCS demand calculations and insights. By linking peak running loads to tactical events and reconstructing movement sequences, it enhances collaboration across departments and informs individualized, game-model-aligned training prescriptions. The notebook offers a scalable tool that can be repeatedly applied across matches to support ongoing monitoring, tactical evaluation, and readiness-based decision-making in elite soccer.
