@@ -3,7 +3,7 @@ This repository contains [Emaly Vatne's](https://emalyvatne.github.io/) submissi
 
 <hr style="border:0; border-top:1px solid black;">
 
-## Calculating Worst-Case Running Demands in Soccer Using Optical Tracking Data and Contextualizing Them with In-Game Events and Visualized Movement Sequences
+## Calculating Worst-Case Scenario Running Demands in Soccer Using Optical Tracking Data and Contextualizing Them with In-Game Events and Visualized Movement Sequences
 
 ### Introduction  
 External load metrics from match play are ubiquitously used to support physical preparation in soccer (1), but are often aggregated across a match, obscuring worst-case scenario (WCS) demands. WCS demands represent the highest locomotor intensities over short rolling windows and better reflect peak match demands than whole-match averages (2,3). Preparing players for WCS demands is critical for effective training design. However, WCS metrics are rarely contextualized within the game, limiting their value to coaches. It remains unclear which technical or tactical actions precede WCS demands or how movement sequences can support sport-specific conditioning. Therefore, this study aimed to contextualize WCS running demands by identifying preceding events and reconstructing movement sequences to inform tactical teaching and physical preparation.    
