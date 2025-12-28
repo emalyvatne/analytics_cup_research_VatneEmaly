@@ -14,7 +14,7 @@ Optical tracking data from a randomly selected professional soccer match with pu
 ### Results
 This submission provides a generalizable Jupyter Notebook that calculates WCS demands from *SkillCorner* tracking data, merges them with preceding in-game dynamic events on a player-specific basis, and visualizes movement sequences during WCS periods for a selected player, allowing the workflow to be applied across matches. 
 
-In the match analyzed for the development of this tool, the peak running intensity increased as window duration shortened, with the highest demands observed during 30-second and 1-minute windows, consistent with previous literature (2,3). 
+In the match analyzed for the development of this tool, the peak running intensity increased as window duration shortened, with the highest demands observed during the 1-minute windows, consistent with previous literature (2,3). 
 
 Table 1. Team-level summary of peak locomotor intensities across multiple WCS durations, reported as mean values with minimum–maximum ranges.  
 | Team                       | Peak m/min 60s           | Peak m/min 120s          | Peak m/min 180s          | Peak m/min 240s          | Peak m/min 300s          |
