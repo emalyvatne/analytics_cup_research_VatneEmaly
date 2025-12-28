@@ -50,7 +50,7 @@ This workflow provides coaches and performance practitioners with interpretable,
 
 ## How to Run the Code  
 
-1. Prerequisites
+1. Prerequisites  
    Make sure Python3 is installed.
 3. Install Pipenv  
 4. Set up the environment  
